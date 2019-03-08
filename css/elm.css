@@ -1,0 +1,375 @@
+.elements .container{
+    border-width: 1px;
+    padding: 40px 0;
+}
+
+.elements .big-title{
+    margin-bottom: 30px;
+}
+
+.elements p{
+    text-align: justify;
+}
+
+.elements .article-header{
+    border: none;
+    margin: 10px 0 10px 0;
+ 
+}
+
+code{
+    background: rgba(230, 235, 237, 0.25);
+    border:1px solid rgb(223, 223, 223);
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--gray-color);
+    font-family: "Courier New", monospace;
+}
+
+.elements-div{
+    border-bottom: 1px solid var(--gray-border);
+    padding: 20px 0;
+    width:100%;
+}
+
+.elements-div:last-child{
+    border:none;
+}
+
+
+
+/* ----------- All buttons in website -------------- */
+
+.b-group{
+    margin-bottom: 30px;
+    padding:0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.b-group a+a{
+    margin-left: 10px;
+}
+
+.b-group:last-child{
+    margin:0px;
+}
+
+.button,.b-primary{
+    box-shadow: inset 0 0 0 2px var(--main-color);
+    border:none;
+    color: var(--main-color);
+    background: transparent;
+    border-radius: 5px;
+    padding: 6px 22px;
+    transition: all .3s ease 0s;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background: #f56a6a1e;
+}
+
+.b-primary{
+    padding: 10px 28px;
+}
+
+.b-primary i{
+    font-size: 11px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.b-primary:hover{
+    background: #f56a6a1e;
+}
+
+.b-colored{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.b-colored i{
+    color: #fff;
+}
+
+.b-colored:hover{
+    opacity: 0.9;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.b-large{
+    padding: 15px 40px;
+}
+
+.b-small{
+    font-size: 9px;
+    padding: 10px 18px;
+}
+
+.b-fit{
+    width: 100%;
+}
+
+.b-disabled{
+    cursor: default;
+    opacity: 0.4!important;
+}
+
+/*   ---------- Lists in website ----------    */
+
+.l-simple{
+    padding: 0 0 20px 15px;
+}
+
+.l-alternate{
+    list-style: none;
+}
+
+.l-alternate li{
+    border-bottom: 1px solid var(--gray-border);
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.l-alternate li:last-child{
+    border:none;
+}
+
+.l-ordered{
+    padding: 0 0 30px 15px;
+}
+
+/* ----------- icon groups in website ------------- */
+
+.icon-group i{
+    font-size: 18px;
+    color: rgb(124, 124, 124);
+    margin-right: 15px;
+    transition: all .2s ease 0s
+}
+
+.icon-group i:hover{
+    color: var(--main-color);
+}
+
+
+/* ----------- Forms in website ------------- */
+
+.forms div[class ^= 'col']{
+    margin-top: 20px;
+}
+
+input, select, textarea {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="text"]:focus,textarea:focus,select:focus{
+    box-shadow: 0px 0px 1px 1px red;
+    border: 1px solid #ced4da;
+    outline: none;
+}
+
+textarea,select,input[type="text"]{
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    color: var(--gray-color);
+}
+
+select,input[type="text"]{
+    padding: 5px;
+    border: 1px solid #ced4da;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+ 
+    color: var(--gray-color);
+    cursor: pointer;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 20px;
+    position: relative;
+}
+
+input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+    background: #ffffff;
+    border-radius: 5px;
+    border: solid 1px var(--gray-border);
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    top: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+input[type="radio"] + label:before {
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:before, input[type="radio"]:checked + label:before {
+    background: #3d4449;
+    border-color: #3d4449;
+    color: #ffffff;
+    content: '\2713';
+}
+
+/* ----------- Definition in website ------------- */
+
+dd{
+    padding-left: 30px;
+}
+/* ----------- image gallery in website ------------- */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery img{
+    width: 32%;
+    height: 32%;
+    margin-top:10px;
+}
+
+/* ----------- Pagination in website ------------- */
+
+.pagination{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.pagination li{
+
+    padding: 3px;
+}
+
+.pagination li .p-item{
+    padding: 3px 8px;
+    font-size: 14px;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+
+.pagination li .p-active{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+blockquote{
+    border-left: 3px solid var(--gray-border);
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--gray-color);
+    font-family: sans-serif, 'arial';
+}
+
+/* ----------- article-l article-r in website ------------- */
+
+.article-l,.article-r{
+    padding-top: 20px;
+}
+
+.article-l img{
+    width: 35%;
+    float: left;
+    margin: 0 20px 10px 0;
+    margin-top: 7px;
+}
+
+.article-r img{
+    width: 35%;
+    float: right;
+    margin: 0 20px 10px 0;
+    margin-top: 7px;
+}
+
+
+/* ----------- BOX in website ------------- */
+
+.box{
+    border: 1px solid var(--gray-border);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* ----------- Preformatted in website ------------- */
+pre{
+ 
+}
+
+pre code{
+    display: block;
+    padding:10px;
+    display: block;
+    font-size: 12px;
+}
+/* ----------- Tables in website ------------- */
+
+
+/* ----- Default table style ----*/
+.t-default{
+    width: 100%;
+    font-family: "Open Sans", sans-serif;;
+    font-size: 14px;
+}
+
+.t-default tr{
+    border-bottom:1px solid var(--gray-border);
+}
+
+.t-default tr:last-child{
+    border:none;
+}
+
+.t-default tr:nth-last-child(2){
+   border-bottom: 2px solid var(--gray-border);
+}
+
+.t-default th{
+    background: #fff;
+    color: rgb(104, 104, 104);
+    border-bottom: 2px solid var(--gray-border);
+}
+
+.t-default tr td,th{
+    padding: 10px;
+    line-height: 25px;
+}
+
+.t-default tr:nth-child(2n+1){
+    background-color: rgba(230, 235, 237, 0.25);
+}
+
+/* ----- Alternate table style ----*/
+
+.t-alternate th{
+    border-bottom: 1px solid var(--gray-border);
+}
+.t-alternate tr:nth-last-child(2){
+    border-bottom: 1px solid var(--gray-border);
+ }
+
+.t-alternate td{
+    border-left: 1px solid var(--gray-border);
+    border-right: 1px solid var(--gray-border);
+}
+
+.t-alternate tr:last-child td{
+    border:none;
+}

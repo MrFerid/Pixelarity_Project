@@ -1,0 +1,254 @@
+/* 
+  ##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1200px){
+
+.container{
+    max-width: 90%;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    /* Main page for medium planshed  */
+    .container {
+        width: 90%;
+    }
+
+    aside{
+        z-index: 99;
+        width: 310px;
+        position: fixed;
+        height: 100%;
+        box-shadow: 3px 5px 60px rgba(0, 0, 0, 0.13);
+    }
+    .aside-wrapper{
+        position: fixed;
+        overflow: scroll;
+        width: 310px;
+        height: 100%;
+    }
+
+    .aside-closed{
+        margin-left: -310px;
+        box-shadow: none;
+    }
+
+    .menu-icon{
+       right: -30px;
+       font-size: 22px;
+       z-index: 99;
+    }
+
+    .slider-title{
+        margin-top:20px;
+    } 
+
+    .services div[class ^= 'col']{
+        margin-top: 60px;
+    }
+
+}
+
+
+/* Phone version Iphone X/6/7/8 */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .container{
+        width: 85%;
+        padding: 40px 0;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    /*  ---------General Classes-------------*/
+                        
+    .big-title{
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .article-header{
+        font-size: 20px;
+        display: inline-block;
+        width: auto;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid var(--main-color);
+        margin-bottom: 20px;
+    }
+   
+    
+   /*------------ aside ----------*/
+    aside{
+         
+    }
+    .aside-wrapper{
+        
+    }
+
+    aside{
+        z-index: 99;
+        width: 310px;
+        position: fixed;
+        height: 100%;
+        box-shadow: 3px 5px 60px rgba(0, 0, 0, 0.13);
+    }
+    .aside-wrapper{
+        position: fixed;
+        overflow: scroll;
+        width: 310px;
+        height: 100%;
+    }
+
+    .aside-closed{
+        margin-left: -310px;
+        box-shadow: none;
+    }
+
+    .menu-icon{
+        right: -80px;
+        font-size: 20px;
+        z-index: 99;
+        color: rgb(129, 129, 129);
+        background-color:rgba(182, 181, 181, 0.493);
+        padding: 10px 20px;
+        border-radius: 5px;
+     }
+ 
+    /*------------ header ----------*/
+
+    header .container{
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    header .col-lg-12{
+        display: block;
+         
+    }
+
+    header .logo{
+        margin-top: 60px;
+
+    }
+
+    header .icon-group{
+        position: absolute;
+        top:0;
+        right:0
+    }
+
+    header .icon-group i{
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .slider-title{
+        margin-top:20px;
+    } 
+
+    .slider-title .big-title{
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 30px;
+    }
+
+    .slider .button{
+        padding: 14px 30px;
+        margin-top: 20px;
+    }
+
+    /* ----------- Services section ----------  */
+
+    .services div[class ^= "col"]{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .services i{
+        font-size: 25px;
+        height: 30px;
+        width: 30px;
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .services i::after{
+        position: absolute;
+        border: 2px solid var(--gray-border);
+        content: "";
+        height: 100%;
+        width: 100%;
+    }
+
+
+    /* ----------- Psts section ----------  */
+
+
+    .posts .col-md-6{
+
+        padding: 0px 15px!important;
+        border: none!important;
+   }
+
+   .posts .post{
+       margin: 0px;
+       padding: 30px 0px;
+       border-bottom: 1px solid var(--gray-border);
+   }
+
+
+   .posts h3{
+       font-size: 18px;
+       margin-top: 20px;
+   }
+
+   .posts .button{
+       font-size: 11px;
+       padding: 10px 25px;
+   }
+
+   .posts .col-md-6:last-child .post{
+       border: none;
+   }
+
+    /* ------------------------------------------ 
+    |        GENERIC PAGE Mobile Version         |
+    -------------------------------------------- */
+
+    .g-main .col-lg-12:last-child::after{
+        height: 0;
+    }
+
+    /* ------------------------------------------- 
+    |        elements PAGE Mobile Version         |
+    --------------------------------------------- */
+    .elements .big-title {
+        margin-bottom: 20px;
+    }
+
+    .elements .article-header {
+        margin: 0;
+    }
+
+    .elements .col-md-12{
+        margin-bottom: 15px;
+    }
+
+    .pagination li a.p-item{
+        display: none;
+    }
+
+    blockquote{
+        font-size: 14px;
+    }
+
+
+}
